@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    @apply bg-zinc-900 text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900;
+  }
+}
+
+@layer utilities {
+  /* editorial underline used for inline text links */
+  .link-underline {
+    @apply underline decoration-zinc-300 decoration-1 underline-offset-4 transition-colors hover:decoration-zinc-900 dark:decoration-zinc-700 dark:hover:decoration-zinc-100;
+  }
+}
+
+/* Keep print output clean: no shadows, no dark backgrounds, no interactive chrome. */
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    color: #18181b !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+}

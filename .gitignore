@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# TypeScript build outputs & cache
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# IDE
+.claude
+.vscode
+.idea
