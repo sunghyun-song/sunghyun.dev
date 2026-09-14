@@ -2,22 +2,22 @@ import type { ResumeData } from "../types/resume";
 
 /**
  * 송성현 이력서 데이터
- * 출처: 송성현.pdf (개인 이력서)
- * 링크(github/demo/repo/linkedin/blog)는 PDF에 명시되지 않아 "#" 플레이스홀더로 두었다.
+ * 출처: 토스 지원용으로 최종 정리한 이력서·경력기술서(합본)
+ * 링크(github/demo/repo/linkedin/blog)는 실제 주소가 확보되지 않아 "#" 플레이스홀더로 두었다.
  * 추후 실제 URL이 확보되면 해당 값만 교체하면 된다.
  */
 export const resumeData: ResumeData = {
   name: "송성현",
-  role: "프리랜서 풀스택 개발자",
+  role: "Frontend Developer",
   tagline:
-    "7년의 견고한 경력, MSA 프로젝트로 증명된 기술력의 프리랜서 풀스택 개발자입니다.",
+    "복잡한 도메인을 빠르게 파악하고, 일정 안에 완성도 있는 화면을 만드는 개발자입니다.",
   about: [
-    "대기업 협력사에서 시작해 풀스택 역량을 쌓고 시스템 안정성을 극대화하며 고객과의 신뢰를 다져왔습니다. 특히 GSITM 재직 당시 GS Retail 홈쇼핑 주문 파트의 MSA 전환 프로젝트에서 핵심적인 역할을 담당했으며, 그 과정에서 실력을 인정받아 이후 메인 주문 시스템의 운영까지 전담하였습니다.",
-    "Java 백엔드의 깊이 있는 이해와 React를 활용한 현대적인 프론트엔드 개발 능력을 겸비하여, 현재 프리랜서로서 어떤 환경에서도 즉시 전력감으로 활약하고 있습니다. 복잡한 비즈니스 로직을 빠르게 파악하고, 안정적인 풀스택 솔루션을 제시하겠습니다.",
+    "7년 9개월 동안 백엔드로 커리어를 시작해서 지금은 프론트엔드 비중이 더 큰 개발자로 일하고 있습니다. GS Retail 세일즈원 현대화 프로젝트에서는 프론트엔드 파트를 이끌었고, 최근에는 React 프론트 프로젝트를 기획 단계부터 배포 가능한 수준까지 혼자 끌고 가고 있습니다. 새로운 도메인에 들어가도 로직을 빠르게 이해하고, 일정 안에 화면을 완성해내는 걸 제 강점으로 생각합니다.",
+    "일하다 문제가 생기면 부정적으로 받아들이기보다 원인을 찾아 풀어가는 쪽으로 생각하는 편이고, 이슈는 발견하는 즉시 팀에 공유해서 커지기 전에 정리하려고 합니다. 개발 이야기를 할 때도 어려운 용어보다는 고객이나 비개발자도 바로 알아들을 수 있는 말로 풀어서 설명하는 걸 중요하게 생각합니다. 타 부서·타 업체와 협업할 일이 많았는데 그 과정에서 소통을 주도하는 역할을 자주 맡았고, 평소에도 유머를 잃지 않으려는 편입니다.",
   ],
-  totalExperience: "7년 7개월",
+  totalExperience: "7년 9개월",
   contact: {
-    email: "songshyun1@daum.net",
+    email: "songshyun1@naver.com",
     phone: "+82 10-2651-8764",
     location: "대한민국",
     github: "#",
@@ -28,25 +28,44 @@ export const resumeData: ResumeData = {
     {
       id: "insoft",
       company: "아이엔소프트",
-      period: "2025.07 - 2026.06 (1년)",
+      period: "2025.07 - 재직중",
       employmentType: "프리랜서",
       department: "프로그램개발",
       position: "과장",
       current: true,
       projects: [
         {
+          id: "insoft-domino-admin",
+          name: "도미노피자 어드민 콘솔 구축 프로젝트",
+          company: "아이엔소프트",
+          period: "2026.08 - 현재",
+          role: "Frontend 단독 개발",
+          summary: "발주사: 도미노피자",
+          highlights: [
+            "Next.js 14(App Router) + TypeScript 기반 어드민 콘솔의 전체 아키텍처(라우팅·레이아웃·인증 흐름)를 Frontend 단독으로 설계 및 구현",
+            "Ant Design 5 + @ant-design/nextjs-registry 조합으로 스타일 유실(flickering) 없는 SSR UI 구성, Math.random·Date·localStorage로 인한 하이드레이션 불일치를 useEffect 기반 후처리로 방지",
+            "Zustand(persist) 기반 전역 상태 스토어 7종(감사로그·알림·공통코드·모니터링 환경·리포트·세션·사용자) 설계, TanStack Query + Axios로 서버 상태 레이어 구성",
+            "대시보드·시스템 모니터링·거래내역 상세·감사로그·공통코드 관리·권한 관리·2단계 로그인 등 20여 개 화면 개발",
+            "Claude Code, Antigravity 같은 AI 코딩 도구를 설계 단계부터 구현까지 사용하며 혼자서 전체 화면을 개발",
+          ],
+          stack: ["Next.js", "TypeScript", "Ant Design", "Zustand", "TanStack Query", "Axios", "Recharts"],
+          ongoing: true,
+          links: { demo: "#", repo: "#" },
+        },
+        {
           id: "insoft-lguplus-integrated-signup",
           name: "LG U+ 통합 가입 상담 프로젝트",
           company: "아이엔소프트",
           period: "2025.07 - 2026.06",
-          role: "프로그램개발 과장",
+          role: "모바일 가입 파트 개발 (20~30명 규모)",
           highlights: [
-            "과거 LG U+에서 as-is를 경험했던 경력을 바탕으로 프로젝트를 진행하였음",
-            "통합가입상담 시스템 개발 및 성공적인 오픈",
-            "React를 사용한 Front 전담 개발",
+            "상담·CS·모바일가입·스마트홈 가입 등으로 흩어져 있던 LG U+ 앱을 하나로 통합하는 프로젝트에서 모바일 가입 파트 담당",
+            "과거 LG U+ 앱 개발 경력으로 도메인 지식을 미리 보유, 팀원들에게 관련 내용 공유",
+            "모바일 가입 고객정보 입력/저장 페이지 개발",
+            "가입신청서 생성 방식을 OZReport에서 EformSign으로 교체, 전환 과정의 이슈 해결",
+            "안면인증 기능 개발",
           ],
-          stack: ["React", "TypeScript"],
-          ongoing: true,
+          stack: ["React", "Vite", "Zustand"],
           links: { demo: "#", repo: "#" },
         },
       ],
@@ -61,29 +80,30 @@ export const resumeData: ResumeData = {
       projects: [
         {
           id: "gsitm-order-service-ops",
-          name: "GS retail 주문 서비스 운영",
+          name: "GS Retail 주문 서비스 운영",
           company: "주식회사지에스아이티엠",
           period: "2025.01 - 2025.06",
-          role: "서비스운영 매니저",
+          role: "서비스 운영 매니저 (개발자 10여 명 팀)",
           highlights: [
-            "주문 상시운영 업무",
-            "시스템 개선 개발 참여 (Dev)",
-            "안정적인 시스템 운영 및 GS ALL 포인트 프로젝트 오픈",
+            "GSSHOP 홈쇼핑 주문 도메인 상시 운영, CS 처리, 기존 버그 수정",
+            "반복 CS·오류 원인 분석으로 데일리 버그 발생 건수 50% 감소 (대표 사례: 카드 할인 적용 후 일부 취소/반품 시 결제 금액 오류)",
           ],
           stack: ["Java", "Spring Boot", "MySQL"],
           links: { demo: "#", repo: "#" },
         },
         {
           id: "gsitm-salesone-restructure",
-          name: "GS Retail 세일즈원 구조개선",
+          name: "GS Retail 세일즈원 구조개선 (현대화 프로젝트)",
           company: "주식회사지에스아이티엠",
           period: "2024.01 - 2024.12",
-          role: "프로그램개발 매니저",
+          role: "프로그램개발 매니저 · 파트 리더",
+          summary: "마이플랫폼 기반 MD·정산 백오피스(세일즈원)를 React로 재구축",
           highlights: [
-            "세일즈원 현대화 프로젝트 주문/결제/정산 React 개발 및 파트 리더",
-            "파트리더로서 프로젝트 마감일 지연 없이 성공적으로 오픈",
+            "프론트 개발자 7명 중 GS Retail PM과 소통해 WBS 작성·일정 보고·화면 배분 담당, 파트 리딩 수행",
+            "정산 관련 화면 개발, 백엔드 모놀리식 API의 MSA 분리 작업 병행",
+            "백엔드 개발자 지원 없이 진행되던 상황에서 API 데이터 누락 문제를 직접 디버깅해 원인(공통 모듈)을 찾아 해결",
           ],
-          stack: ["React", "TypeScript", "Java", "Spring Boot"],
+          stack: ["React", "MSA"],
           links: { demo: "#", repo: "#" },
         },
         {
@@ -92,10 +112,12 @@ export const resumeData: ResumeData = {
           company: "주식회사지에스아이티엠",
           period: "2023.03 - 2023.12",
           role: "프로그램개발 매니저",
-          summary: "홈쇼핑 주문 파트의 MSA 전환 프로젝트",
+          summary: "GS Retail 백엔드 주문 파트 MSA 전환 프로젝트(Exodus)",
           highlights: [
-            "세일즈원 현대화 프로젝트 주문 파트 구조개선 프로젝트 리더, 일정 관리 및 소통, 백엔드 개발 담당",
-            "파트리더로서 타 도메인 개발자들과 소통하며 프로젝트를 성공적으로 오픈",
+            "GS Retail 백엔드에서 주문 관련 API만 분리하는 MSA 전환 프로젝트(Exodus) 담당",
+            "기존 코드를 Spring Boot(Java 17) 기반 신주문 시스템으로 이관",
+            "기존 모놀리식 주문 ESB를 쓰던 클라이언트 프로그램 담당자들과 협의해 API 방식으로 전환",
+            "타 부서 협업을 주도한 경험으로 발주사 팀장의 신뢰를 얻어 이후 프로젝트에도 이어서 투입",
           ],
           stack: ["Java", "Spring Boot", "MSA"],
           links: { demo: "#", repo: "#" },
@@ -117,9 +139,9 @@ export const resumeData: ResumeData = {
           period: "2021.04 - 2023.01",
           role: "운영 선임",
           highlights: [
-            "무인매장 오픈 후 시스템 유지보수",
-            "운영 기간 동안 장애 0건 달성",
-            "일일점검 모니터링",
+            "본인이 구축한 무인매장 시스템을 직접 운영, 매일 모니터링과 신규 기능 테스트 후 배포",
+            "운영 기간 동안 장애 0건 유지",
+            "고객사의 신규 기능·수정 요청을 파악해 구현 및 배포",
           ],
           stack: ["Java", "JSP", "Oracle"],
           links: { demo: "#", repo: "#" },
@@ -129,11 +151,13 @@ export const resumeData: ResumeData = {
           name: "무인매장 시스템 구축 프로젝트",
           company: "(주)엠텔레텍",
           period: "2020.10 - 2021.04",
-          role: "프로그램개발",
+          role: "프로그램개발 (개발자 2명 중 상담 파트 담당)",
           highlights: [
-            "셀프 상담/가입 앱 개발",
-            "상담 정보 API 개발",
-            "큐레이션 설계 및 개발",
+            "코로나19로 늘어난 비대면 수요에 맞춰 기존 전자청약의 모바일 가입 기능을 확장해 무인매장 시스템 구축",
+            "단말기·요금제·부가서비스 기준 실시간 요금 계산 및 견적 기능 개발",
+            "상담사 연결 기능 개발, 연동 업체와 직접 협의해 구현",
+            "기존에 없던 셀프 개통 프로세스 설계 및 개발",
+            "고객 유형별 요금제 추천 큐레이션 로직 설계·개발",
           ],
           stack: ["Java", "Spring MVC", "JSP"],
           links: { demo: "#", repo: "#" },
@@ -143,13 +167,14 @@ export const resumeData: ResumeData = {
           name: "U+ 전자신청서 판매점 전자 청약",
           company: "(주)엠텔레텍",
           period: "2020.05 - 2020.10",
-          role: "프로그램개발",
+          role: "프로그램개발 (개발자 5명 중 담당)",
           highlights: [
-            "기존 앱 분석 및 설계",
-            "LG U+ API 연동 개발",
-            "앱 기능 및 속도 개선",
+            "지류 서식으로 개통하던 판매점 업무를 전산화, 고객정보 작성/저장·기존 고객 가입정보 조회·관리자 시스템 담당",
+            "JSP+jQuery 기반 복잡한 비즈니스 로직을 LG CNS 표준 프레임워크(WebSquare + Wafful)로 재설계",
+            "판매점 직원 앱 사용률 10%(약 600건) → 90%(약 7,000건) 개선",
+            "비동기 통신 적용으로 페이지 로드 속도 400ms → 200ms 개선",
           ],
-          stack: ["Java", "JavaScript", "jQuery"],
+          stack: ["JSP", "jQuery", "WebSquare"],
           links: { demo: "#", repo: "#" },
         },
         {
@@ -159,9 +184,11 @@ export const resumeData: ResumeData = {
           period: "2019.08 - 2020.05",
           role: "프로그램개발",
           highlights: [
-            "LG U+ 스마트가입 앱 개발",
-            "관리자 홈페이지 구축",
-            "배포환경을 위한 서버 구축",
+            "Front-end: 기존 JSP 페이지를 WebSquare로 전환, JavaScript로 동적 기능 구현",
+            "Back-end: Devon Framework를 Wafful Framework로 전환",
+            "REST API 기반 ESB를 APIM으로 전환 연동",
+            "단말기·요금제·공지사항 관리자 페이지 구축",
+            "LG U+ 차세대 프로젝트의 첫 사례로 선도 개발",
           ],
           stack: ["Java", "Spring MVC", "JSP", "Linux"],
           links: { demo: "#", repo: "#" },
@@ -173,9 +200,9 @@ export const resumeData: ResumeData = {
           period: "2018.12 - 2019.08",
           role: "프로그램개발",
           highlights: [
-            "성남시의료원 병원 웹 페이지 개발",
-            "Naver, Kakao Open API 연동 개발",
-            "아파치 톰캣 서버 튜닝",
+            "EMR 병원 데이터를 API로 연동해 DB 저장, 진료 예약·의료진 정보 메뉴 개발",
+            "Naver 소셜 로그인, 병원 위치 Kakao Map API 연동",
+            "병원 커뮤니티 게시판 템플릿 제작 및 관리자 홈페이지 연동",
           ],
           stack: ["Java", "JSP", "HTML5", "JavaScript"],
           links: { demo: "#", repo: "#" },
@@ -183,23 +210,28 @@ export const resumeData: ResumeData = {
       ],
     },
   ],
-  // 대표 프로젝트: 이력서 상 임팩트가 큰 항목(MSA 전환, 파트 리딩, 장애 0건 운영)을 선별
-  featuredProjects: [],
   skills: [
+    "React",
+    "Next.js",
+    "Vite",
+    "TypeScript",
+    "Ant Design",
+    "Zustand",
+    "TanStack Query",
+    "Axios",
+    "Recharts",
+    "HTML5",
+    "jQuery",
     "Java",
     "Spring Boot",
     "Spring MVC",
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "jQuery",
-    "HTML5",
+    "JSP",
     "MySQL",
     "Oracle",
     "Git",
     "SVN",
-    "JSP",
     "Linux",
+    "Apache Tomcat",
   ],
   education: [
     {
@@ -213,8 +245,10 @@ export const resumeData: ResumeData = {
   credentials: [
     {
       id: "cert-information-processing-engineer",
-      title: "정보처리기사 (필기)",
+      title: "정보처리기사",
       category: "자격증",
+      date: "2026.09",
+      issuer: "국가기술자격증",
     },
     {
       id: "edu-spring-core-principles",
@@ -238,12 +272,18 @@ export const resumeData: ResumeData = {
       issuer: "겟 스마트",
     },
   ],
+  aiUsage: [
+    {
+      id: "ai-domino-admin",
+      description: "Claude Code, Antigravity 등 AI 코딩 도구로 도미노피자 어드민 콘솔을 설계부터 구현까지 진행",
+    },
+    {
+      id: "ai-figma-to-react",
+      description: "MCP 서버와 연동한 Amazon Q로 Figma 디자인을 실제 React 컴포넌트로 변환",
+    },
+    {
+      id: "ai-side-project",
+      description: "개인 사이드 프로젝트에는 Codex, Antigravity를 구독해 활용 중",
+    },
+  ],
 };
-
-// featuredProjects: 각 회사에서 임팩트가 가장 큰 프로젝트 1건씩 선별해 채운다.
-resumeData.featuredProjects = [
-  resumeData.experiences[0].projects[0], // LG U+ 통합 가입 상담 프로젝트 (현재)
-  resumeData.experiences[1].projects[2], // GS Retail 주문 구조개선 (MSA 전환)
-  resumeData.experiences[1].projects[1], // GS Retail 세일즈원 구조개선
-  resumeData.experiences[2].projects[0], // 무인매장 셀프 상담 가입 앱 운영 (장애 0건)
-];

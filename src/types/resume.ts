@@ -89,6 +89,12 @@ export interface Credential {
   issuer?: string;
 }
 
+/** AI 도구 활용 경험 한 항목 (도구명 + 실제 활용 내용) */
+export interface AiUsageItem {
+  id: string;
+  description: string;
+}
+
 /** 이력서 전체 데이터 구조 */
 export interface ResumeData {
   name: string;
@@ -102,9 +108,9 @@ export interface ResumeData {
   totalExperience: string;
   contact: ContactInfo;
   experiences: Experience[];
-  /** Projects 섹션에서 강조할 대표 프로젝트 (experiences 내 프로젝트 중 선별) */
-  featuredProjects: Project[];
   skills: string[];
   education: Education[];
   credentials: Credential[];
+  /** AI 코딩 도구 활용 경험 목록 */
+  aiUsage: AiUsageItem[];
 }
