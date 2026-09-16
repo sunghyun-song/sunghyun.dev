@@ -108,7 +108,6 @@ export interface ResumeData {
   totalExperience: string;
   contact: ContactInfo;
   experiences: Experience[];
-  skills: string[];
   education: Education[];
   credentials: Credential[];
   /** AI 코딩 도구 활용 경험 목록 */
