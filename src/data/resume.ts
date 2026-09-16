@@ -12,8 +12,7 @@ export const resumeData: ResumeData = {
   tagline:
     "복잡한 도메인을 빠르게 파악하고, 일정 안에 완성도 있는 화면을 만드는 개발자입니다.",
   about: [
-    "7년 9개월 동안 백엔드로 커리어를 시작해서 지금은 프론트엔드 비중이 더 큰 개발자로 일하고 있습니다. GS Retail 세일즈원 현대화 프로젝트에서는 프론트엔드 파트를 이끌었고, 최근에는 React 프론트 프로젝트를 기획 단계부터 배포 가능한 수준까지 혼자 끌고 가고 있습니다. 새로운 도메인에 들어가도 로직을 빠르게 이해하고, 일정 안에 화면을 완성해내는 걸 제 강점으로 생각합니다.",
-    "일하다 문제가 생기면 부정적으로 받아들이기보다 원인을 찾아 풀어가는 쪽으로 생각하는 편이고, 이슈는 발견하는 즉시 팀에 공유해서 커지기 전에 정리하려고 합니다. 개발 이야기를 할 때도 어려운 용어보다는 고객이나 비개발자도 바로 알아들을 수 있는 말로 풀어서 설명하는 걸 중요하게 생각합니다. 타 부서·타 업체와 협업할 일이 많았는데 그 과정에서 소통을 주도하는 역할을 자주 맡았고, 평소에도 유머를 잃지 않으려는 편입니다.",
+    "7년 9개월간 백엔드로 커리어를 시작해 지금은 프론트엔드 중심으로 일하는 개발자입니다. GS Retail 세일즈원 현대화 프로젝트에서 프론트엔드 파트를 이끌었고, 최근에는 Next.js 기반 어드민 콘솔을 기획부터 배포까지 혼자 설계·개발했습니다. 새로운 도메인의 로직을 빠르게 파악해 일정 안에 완성도 있는 화면을 만드는 것과, Claude Code·Antigravity 같은 AI 코딩 도구를 실무에 적극 활용하는 것을 강점으로 생각합니다.",
   ],
   totalExperience: "7년 9개월",
   contact: {
@@ -67,7 +66,7 @@ export const resumeData: ResumeData = {
     },
     {
       id: "gsitm",
-      company: "주식회사지에스아이티엠",
+      company: "GS ITM",
       period: "2023.03 - 2025.07 (2년 5개월)",
       employmentType: "정규직",
       department: "프로그램 개발 운영",
@@ -76,7 +75,7 @@ export const resumeData: ResumeData = {
         {
           id: "gsitm-order-service-ops",
           name: "GS Retail 주문 서비스 운영",
-          company: "주식회사지에스아이티엠",
+          company: "GS ITM",
           period: "2025.01 - 2025.06",
           role: "서비스 운영 매니저 (개발자 10여 명 팀)",
           highlights: [
@@ -89,7 +88,7 @@ export const resumeData: ResumeData = {
         {
           id: "gsitm-salesone-restructure",
           name: "GS Retail 세일즈원 구조개선 (현대화 프로젝트)",
-          company: "주식회사지에스아이티엠",
+          company: "GS ITM",
           period: "2024.01 - 2024.12",
           role: "프로그램개발 매니저 · 파트 리더",
           summary: "마이플랫폼 기반 MD·정산 백오피스(세일즈원)를 React로 재구축",
@@ -104,7 +103,7 @@ export const resumeData: ResumeData = {
         {
           id: "gsitm-order-restructure",
           name: "GS Retail 주문 구조개선",
-          company: "주식회사지에스아이티엠",
+          company: "GS ITM",
           period: "2023.03 - 2023.12",
           role: "프로그램개발 매니저",
           summary: "GS Retail 백엔드 주문 파트 MSA 전환 프로젝트(Exodus)",
